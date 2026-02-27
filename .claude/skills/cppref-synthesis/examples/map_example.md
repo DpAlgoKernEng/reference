@@ -1,12 +1,12 @@
 # std::map - 映射容器
 
-## 概述
+## 1. 概述
 
 `std::map` 是 C++ 标准库中的关联容器（associative container），用于存储键值对（key-value pairs）。它维护按键排序的元素集合，并允许通过键快速查找、插入和删除元素。
 
 map 定义在 `<map>` 头文件中，位于 `std` 命名空间下。
 
-## 来源与演变
+## 2. 来源与演变
 
 ### 首次引入
 
@@ -40,7 +40,7 @@ map 提供了统一的、高效的键值存储接口。
 - `erase()` 返回迭代器类型改进
 - 更一致的容器接口
 
-## 语法与声明
+## 3. 语法与声明
 
 ### 基本模板定义
 
@@ -87,7 +87,7 @@ using const_reverse_iterator = std::reverse_iterator<const_iterator>;
 | `map(map&& other) noexcept` | 移动构造 |
 | `map(std::initializer_list<value_type> init, const Compare& = Compare(), const Allocator& = Allocator())` | 列表初始化 |
 
-## 参数说明
+### 参数说明
 
 - **Key**: 键类型，必须可比较
 - **T**: 值类型
@@ -101,7 +101,7 @@ using const_reverse_iterator = std::reverse_iterator<const_iterator>;
 - 必须是可析构的
 - 必须支持 `<` 比较运算符或自定义比较器
 
-## 底层原理
+## 4. 底层原理
 
 ### 数据结构
 
@@ -141,7 +141,7 @@ using const_reverse_iterator = std::reverse_iterator<const_iterator>;
 - **弱异常保证**：插入操作失败可能使容器处于中间状态
 - **关键点**：map 的迭代器始终指向有效的元素，直到该元素被删除
 
-## 使用场景
+## 5. 使用场景
 
 ### 适合使用 map 的场景
 
@@ -167,7 +167,7 @@ using const_reverse_iterator = std::reverse_iterator<const_iterator>;
 3. **使用 `contains()` (C++17)**：比 `find() != end()` 更清晰的语法
 4. **自定义比较器**：默认使用 `<`，可自定义比较逻辑
 
-## 代码示例
+## 6. 代码示例
 
 ### 基础用法
 
@@ -311,7 +311,7 @@ std::cout << ref;
 | `std::multimap` | 允许重复键 |
 | `std::flat_map` (C++23) | 有序向量实现，更好的缓存性能 |
 
-## 总结
+## 7. 总结
 
 `std::map` 是 C++ 中最常用的关联容器之一，提供：
 

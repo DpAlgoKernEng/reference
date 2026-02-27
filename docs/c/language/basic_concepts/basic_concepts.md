@@ -1,6 +1,6 @@
 # C 语言基础概念 (Basic Concepts)
 
-## 概述 (Overview)
+## 1. 概述 (Overview)
 
 C 语言基础概念定义了描述 C 编程语言时所使用的特定术语和核心概念。理解这些基础概念是掌握 C 语言的关键，它们构成了整个语言体系的基石。
 
@@ -22,7 +22,7 @@ C 程序本质上是一系列文本文件的集合，这些文件通过**翻译�
 
 ---
 
-## 来源与演变 (Origin and Evolution)
+## 2. 来源与演变 (Origin and Evolution)
 
 ### 历史背景
 
@@ -50,7 +50,7 @@ C 语言概念体系的设计目标包括：
 
 ---
 
-## 语法与参数 (Syntax and Parameters)
+## 3. 语法与参数 (Syntax and Parameters)
 
 ### 程序结构
 
@@ -196,7 +196,7 @@ extern int global_ext;      // 引用文件1.c中的global_ext
 
 ---
 
-## 底层原理 (Underlying Principles)
+## 4. 底层原理 (Underlying Principles)
 
 ### 翻译过程
 
@@ -253,7 +253,7 @@ C 语言使用**静态类型系统（Static Type System）**，类型在编译�
 
 ---
 
-## 使用场景 (Use Cases)
+## 5. 使用场景 (Use Cases)
 
 ### 适用场景
 
@@ -385,7 +385,7 @@ void scope_hiding(void) {
 
 ---
 
-## 代码示例 (Examples)
+## 6. 代码示例 (Examples)
 
 ### 基础用法
 
@@ -599,7 +599,7 @@ int result4 = DOUBLE_GOOD(5) * 3;  // 展开: ((5) + (5)) * 3 = 30
 
 ---
 
-## 总结 (Summary)
+## 7. 总结 (Summary)
 
 ### 核心要点
 

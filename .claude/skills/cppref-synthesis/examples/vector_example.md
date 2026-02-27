@@ -1,12 +1,12 @@
 # std::vector - 向量容器
 
-## 概述
+## 1. 概述
 
 `std::vector` 是 C++ 标准库中最重要的序列容器（sequence container）之一。它封装了动态数组（dynamic array），提供连续内存存储，支持快速随机访问。vector 可以自动管理内存，在容量不足时自动扩容，是 C++ 中最常用的容器类型。
 
 vector 定义在 `<vector>` 头文件中，位于 `std` 命名空间下。
 
-## 来源与演变
+## 2. 来源与演变
 
 ### 首次引入
 
@@ -42,7 +42,7 @@ vector 的出现解决了这些问题，提供了：
 - `erase()` 返回迭代器类型改进
 - `contains()` 方法（部分容器）
 
-## 语法与声明
+## 3. 语法与声明
 
 ### 基本模板定义
 
@@ -85,7 +85,7 @@ using const_reverse_iterator = std::reverse_iterator<const_iterator>;
 | `vector(vector&& other) noexcept` | 移动构造 |
 | `vector(std::initializer_list<T> init, const Allocator& = Allocator())` | 列表初始化 |
 
-## 参数说明
+### 参数说明
 
 - **T**: 元素类型，必须满足 `Erasable` 和 `MoveInsertable` 要求
 - **Allocator**: 内存分配器类型，默认使用 `std::allocator<T>`
@@ -96,7 +96,7 @@ using const_reverse_iterator = std::reverse_iterator<const_iterator>;
 - 必须可复制赋值或移动赋值
 - 必须可析构
 
-## 底层原理
+## 4. 底层原理
 
 ### 内存布局
 
@@ -144,7 +144,7 @@ vector 维护三个关键指标：
 - **基本异常安全**：`reserve` 可能分配内存失败但不破坏容器状态
 - **不抛出异常**：`swap`, `clear`, `pop_back`, `operator[]` 等操作保证不抛出异常
 
-## 使用场景
+## 5. 使用场景
 
 ### 适合使用 vector 的场景
 
@@ -193,7 +193,7 @@ vector 本身**不是线程安全**的。如果多个线程同时访问同一个
 - 只读操作是安全的
 - 读写或写写操作需要外部同步（如互斥锁）
 
-## 代码示例
+## 6. 代码示例
 
 ### 基础用法
 
@@ -341,7 +341,7 @@ try {
 | `std::string` | char 的 vector 特化 |
 | `std::span` (C++20) | 对连续内存的非拥有视图 |
 
-## 总结
+## 7. 总结
 
 `std::vector` 是 C++ 中最通用、最高效的容器之一。它提供了：
 

@@ -10,6 +10,12 @@
 
 **cppref-synthesis 技能**：核心技能 `cppref-synthesis` 能够分析技术文档并生成结构化的中文文档，输出 7 个标准章节
 
+## 使用方式
+
+**示例1**：/cppref-synthesis 使用这个技能，对original_docs/c/language/basic_concepts/charset.md 分析生成中文文档，输出到对应的docs/c/language/basic_concepts/charset.md 中
+
+**示例2**：/cppref-synthesis 使用这个技能，对original_docs/cpp/language/basic_concepts/charset.md 分析生成中文文档，输出到对应的docs/cpp/language/basic_concepts/charset.md 中
+
 ## 项目结构
 
 ```
