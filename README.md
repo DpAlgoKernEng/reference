@@ -12,9 +12,9 @@
 
 ## 使用方式
 
-**示例1**：/cppref-synthesis 使用这个技能，对original_docs/c/language/basic_concepts/charset.md 分析生成中文文档，输出到对应的docs/c/language/basic_concepts/charset.md 中
+**示例1**：/cppref-synthesis 使用这个技能，对original_docs/c/language/basic_concepts/translation_phases.md 分析生成中文文档，输出到对应的docs/c/language/basic_concepts/translation_phases.md 中
 
-**示例2**：/cppref-synthesis 使用这个技能，对original_docs/cpp/language/basic_concepts/charset.md 分析生成中文文档，输出到对应的docs/cpp/language/basic_concepts/charset.md 中
+**示例2**：/cppref-synthesis 使用这个技能，对original_docs/cpp/language/basic_concepts/translation_phases.md 分析生成中文文档，输出到对应的docs/cpp/language/basic_concepts/translation_phases.md 中
 
 ## 项目结构
 
